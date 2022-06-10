@@ -1,11 +1,11 @@
 <template>
-  <router-view />
+  <div>NotFound</div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Thalex',
+  name: 'NotFound',
 })
 </script>
