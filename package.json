@@ -7,7 +7,9 @@
     "serve": "vue-cli-service serve",
     "build:test": "vue-cli-service build --mode testing",
     "build:stage": "vue-cli-service build --mode staging",
-    "build:production": "vue-cli-service build --mode production"
+    "build:production": "vue-cli-service build --mode production",
+    "test:unit": "vue-cli-service test:unit  -q -t 12000 .unit-test",
+    "test:unit:watch": "vue-cli-service test:unit -q -w .unit-test"
   },
   "dependencies": {
     "axios": "^0.24.0",
