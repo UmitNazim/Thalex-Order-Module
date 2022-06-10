@@ -5,9 +5,9 @@
   "scripts": {
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
-    "build:test": "vue-cli-service build",
-    "build:stage": "vue-cli-service build",
-    "build:production": "vue-cli-service build"
+    "build:test": "vue-cli-service build --mode testing",
+    "build:stage": "vue-cli-service build --mode staging",
+    "build:production": "vue-cli-service build --mode production"
   },
   "dependencies": {
     "axios": "^0.24.0",
