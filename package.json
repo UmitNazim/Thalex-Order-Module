@@ -8,6 +8,8 @@
     "build:test": "vue-cli-service build --mode testing",
     "build:stage": "vue-cli-service build --mode staging",
     "build:production": "vue-cli-service build --mode production",
+    "serve:storybook": "start-storybook -c .storybook/configs",
+    "build:storybook": "build-storybook -c .storybook/configs",
     "test:unit": "vue-cli-service test:unit  -q -t 12000 .unit-test",
     "test:unit:watch": "vue-cli-service test:unit -q -w .unit-test"
   },
