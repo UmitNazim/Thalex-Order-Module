@@ -1,5 +1,5 @@
 <template>
-  <div>NotFound</div>
+  <div>Notfound</div>
 </template>
 
 <script lang="ts">
