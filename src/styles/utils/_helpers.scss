@@ -1,6 +1,4 @@
-$app-colors: ();
-
-@each $key, $value in $app-colors {
+@each $key, $value in $main-colors {
   .t-#{$key} {
     color: $value;
   }
@@ -59,4 +57,20 @@ $line-clamp-box: (
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.app-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    max-width: 1372px;
+  }
+
+  &--fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

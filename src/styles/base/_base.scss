@@ -13,3 +13,13 @@ html,
 body {
   min-height: 100vh;
 }
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  & > main:first-of-type {
+    flex-grow: 1;
+  }
+}
