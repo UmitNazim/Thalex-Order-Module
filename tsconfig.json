@@ -18,5 +18,5 @@
     "noImplicitThis": false
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", ".unit-test/*.js", ".unit-test/*.jsx"]
 }

@@ -1,0 +1,56 @@
+.molecule-input {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: var(--ebony-clay);
+  border: 1px solid var(--gunmetal);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 32px;
+  padding: 4px;
+
+  &:focus-within {
+    border: 1px solid var(--corn);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  &__field {
+    outline: 0;
+    padding: 0;
+    width: 100%;
+    height: inherit;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: var(--dawn-pink);
+
+    ::-webkit-input-placeholder {
+      @extend .font-medium;
+    }
+
+    :-ms-input-placeholder {
+      @extend .font-medium;
+    }
+
+    ::placeholder {
+      @extend .font-medium;
+    }
+  }
+
+  &__prepend {
+    margin: 0 15px 0 7px;
+    color: var(--dawn-pink);
+    @extend .font-small;
+  }
+
+  &__append {
+    margin: 0 7px 0 15px;
+    color: var(--dawn-pink);
+    @extend .font-small;
+  }
+}
