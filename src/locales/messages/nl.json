@@ -1,5 +1,9 @@
 {
   "general": {
     "name": ""
+  },
+  "trade": {
+    "buy": "Buy",
+    "sell": "Sell"
   }
 }

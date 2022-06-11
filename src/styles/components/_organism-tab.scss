@@ -1,0 +1,43 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.organism-tab {
+  width: 100%;
+  padding: 6px 8px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--dawn-pink);
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  border-bottom: 2px solid var(--ebony-clay);
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &--selected {
+    background-color: var(--ebony-clay);
+    cursor: default;
+  }
+
+  &--sm {
+    @extend .font-medium;
+  }
+
+  &--md {
+    @extend .font-large;
+  }
+
+  &-panel {
+    padding: 24px 0;
+    animation: fade-in 0.5s ease-in-out 0s 1 normal both;
+  }
+}
