@@ -1,0 +1,10 @@
+{
+  "general": {},
+  "trade": {
+    "amount": "Amount",
+    "buy": "Buy",
+    "price": "Price",
+    "sell": "Sell",
+    "total": "Total"
+  }
+}

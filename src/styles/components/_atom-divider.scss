@@ -1,0 +1,15 @@
+.atom-divider {
+  width: 100%;
+
+  &__sm {
+    border: 1px solid;
+  }
+
+  &__md {
+    border: 2px solid;
+  }
+
+  &__lg {
+    border: 3px solid;
+  }
+}

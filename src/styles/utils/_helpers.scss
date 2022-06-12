@@ -1,0 +1,186 @@
+@each $key, $value in $main-colors {
+  .t-#{$key} {
+    color: $value;
+  }
+
+  .b-#{$key} {
+    background-color: $value;
+  }
+}
+
+$opacity-box: (
+  "3": 0.3,
+  "5": 0.5,
+  "7": 0.7,
+  "9": 0.9,
+);
+
+@each $key, $value in $opacity-box {
+  .hover-opacity-#{$key} {
+    &:hover {
+      opacity: $value;
+    }
+  }
+}
+
+$flex-box: (
+  "start": flex-start,
+  "center": center,
+  "between": space-between,
+  "end": flex-end,
+  "around": space-around,
+  "evenly": space-evenly,
+);
+
+@each $key, $value in $flex-box {
+  .place-items-#{$key} {
+    display: flex;
+    justify-content: $value;
+    align-items: center;
+  }
+}
+$utilities-box: (
+  "2": 2,
+  "4": 4,
+  "8": 8,
+  "12": 12,
+  "16": 16,
+);
+
+@each $key, $value in $utilities-box {
+  .gap-#{$key} {
+    gap: #{$value}px;
+  }
+  .mt-#{$key} {
+    margin-top: #{$value}px;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: #{$value}px;
+  }
+
+  .ml-#{$key} {
+    margin-left: #{$value}px;
+  }
+
+  .mr-#{$key} {
+    margin-right: #{$value}px;
+  }
+
+  .m-#{$key} {
+    margin: #{$value}px;
+  }
+
+  .my-#{$key} {
+    margin-top: #{$value}px;
+    margin-bottom: #{$value}px;
+  }
+  .mx-#{$key} {
+    margin-left: #{$value}px;
+    margin-right: #{$value}px;
+  }
+
+  .pt-#{$key} {
+    padding-top: #{$value}px;
+  }
+
+  .pb-#{$key} {
+    padding-bottom: #{$value}px;
+  }
+
+  .pl-#{$key} {
+    padding-left: #{$value}px;
+  }
+
+  .pr-#{$key} {
+    padding-right: #{$value}px;
+  }
+
+  .p-#{$key} {
+    padding: #{$value}px;
+  }
+
+  .py-#{$key} {
+    padding-top: #{$value}px;
+    padding-bottom: #{$value}px;
+  }
+  .px-#{$key} {
+    padding-left: #{$value}px;
+    padding-right: #{$value}px;
+  }
+}
+
+$line-clamp-box: (
+  "1": 1,
+  "2": 2,
+  "3": 3,
+);
+
+@each $key, $value in $line-clamp-box {
+  .line-clamp-#{$key} {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $value;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.slide-in-effect {
+  animation: slide-in 1s ease 0s 1 normal forwards;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.app-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    max-width: 1372px;
+  }
+
+  &--fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

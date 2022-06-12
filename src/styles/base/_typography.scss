@@ -1,0 +1,23 @@
+@mixin typography-generator($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+.font {
+  &-large {
+    @include typography-generator($font-weight: 400, $font-size: 16px, $line-height: 24px);
+  }
+
+  &-medium {
+    @include typography-generator($font-weight: 400, $font-size: 14px, $line-height: 20px);
+  }
+
+  &-small {
+    @include typography-generator($font-weight: 400, $font-size: 12px, $line-height: 16px);
+  }
+
+  &-x-small {
+    @include typography-generator($font-weight: 400, $font-size: 11px, $line-height: 16px);
+  }
+}

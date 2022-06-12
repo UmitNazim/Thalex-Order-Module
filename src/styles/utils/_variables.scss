@@ -1,0 +1,33 @@
+:root {
+  --dark-jungle-green: #1e2025;
+  --mirage: #161a1e;
+  --gunmetal: rgb(43, 49, 58);
+  --mandy: #e84262;
+  --citron: #95a724;
+  --dawn-pink: #e9ecef;
+  --ebony-clay: #292d35;
+  --corn: #efb90a;
+  --oslo-grey: rgb(132, 142, 156);
+  --french-grey: rgb(183, 189, 198);
+  --watermelon: rgb(246, 70, 93);
+  --vibrant: rgb(14, 203, 129);
+  --watermelon-opacity: rgb(246, 70, 93, 0.1);
+  --vibrant-opacity: rgb(14, 203, 129, 0.1);
+}
+
+$main-colors: (
+  "dark-jungle-green": var(--dark-jungle-green),
+  "mirage": var(--mirage),
+  "gunmetal": var(--gunmetal),
+  "mandy": var(--mandy),
+  "citron": var(--citron),
+  "dawn-pink": var(--dawn-pink),
+  "ebony-clay": var(--ebony-clay),
+  "corn": var(--corn),
+  "oslo-grey": var(--oslo-grey),
+  "french-grey": var(--french-grey),
+  "watermelon": var(--watermelon),
+  "vibrant": var(--vibrant),
+  "watermelon-opacity": var(--watermelon-opacity),
+  "vibrant-opacity": var(--vibrant-opacity),
+);
