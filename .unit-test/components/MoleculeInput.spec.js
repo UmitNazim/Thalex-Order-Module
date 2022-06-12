@@ -42,6 +42,15 @@ describe('Components > MoleculeInput', () => {
       })
     })
 
+    describe('readonly', () => {
+      it('checks prop acceptable value type.', () => {
+        expect(wrapper.vm.$options.props.readonly).to.include({
+          type: Boolean,
+          default: false,
+        })
+      })
+    })
+
     describe('type', () => {
       it('checks prop acceptable value type.', () => {
         expect(wrapper.vm.$options.props.type).to.include({

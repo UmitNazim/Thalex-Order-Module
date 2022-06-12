@@ -1,12 +1,20 @@
 import { MarketStateModel, OrderbookItemList, OrderbookItem } from '@/models'
 
 export default {
-  setOrderBookSell(state: MarketStateModel, items: OrderbookItemList): void {
-    state.sellItems = items
+  setOrderBookSell(
+    state: MarketStateModel,
+    item: { sellList: OrderbookItemList; maxAmount: number }
+  ): void {
+    state.sellItems = item.sellList
+    if (item.maxAmount > state?.maxSellAmount) state.maxSellAmount = item.maxAmount
   },
 
-  setOrderBookBuy(state: MarketStateModel, items: OrderbookItemList): void {
-    state.buyItems = items
+  setOrderBookBuy(
+    state: MarketStateModel,
+    item: { buyList: OrderbookItemList; maxAmount: number }
+  ): void {
+    state.buyItems = item.buyList
+    if (item.maxAmount > state?.maxBuyAmount) state.maxBuyAmount = item.maxAmount
   },
 
   createOrderBook(
@@ -14,6 +22,9 @@ export default {
     { side, item }: { side: string; item: OrderbookItem }
   ): void {
     state[side].push(item)
+    const target = side.includes('buy') ? 'maxBuyAmount' : 'maxSellAmount'
+    const total = item.price * item.amount
+    if (total > state[target]) state[target] = total
   },
 
   deleteOrderBook(state: MarketStateModel, { side, id }: { side: string; id: number }): void {
