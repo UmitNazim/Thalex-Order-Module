@@ -1,12 +1,10 @@
 {
-  "general": {
-    "name": ""
-  },
+  "general": {},
   "trade": {
+    "amount": "Amount",
     "buy": "Buy",
-    "sell": "Sell",
     "price": "Price",
-    "total": "Total",
-    "amount": "Amount"
+    "sell": "Sell",
+    "total": "Total"
   }
 }

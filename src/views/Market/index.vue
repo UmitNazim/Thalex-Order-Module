@@ -1,10 +1,10 @@
 <template>
-  <main class="b-mirage market">
+  <main class="b-mirage py-4">
     <market-ticker />
-    <div class="market-wrapper">
-      <order-book />
+    <div class="market app-container">
+      <order-book @on-click="(order) => (selected = order)" />
+      <trade-form :selected="selected" />
       <orders-chart />
-      <trade-form />
       <user-orders />
       <market-picker />
     </div>
@@ -23,6 +23,7 @@ import UserOrders from './UserOrders/index.vue'
 
 export default defineComponent({
   name: 'Market',
+  data: () => ({ selected: {} }),
   components: {
     MarketTicker,
     MarketPicker,

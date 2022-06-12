@@ -1,12 +1,18 @@
 import { Commit } from 'vuex'
-import { OrderbookItem } from '@/models'
+import { OrderbookItem, OrderbookItemList } from '@/models'
 
 export default {
-  orderBookSellList({ commit }: { commit: Commit }, orderBookSell: OrderbookItem): void {
+  orderBookSellList(
+    { commit }: { commit: Commit },
+    orderBookSell: { sellList: OrderbookItemList; maxAmount: number }
+  ): void {
     commit('setOrderBookSell', orderBookSell)
   },
 
-  orderBookBuyList({ commit }: { commit: Commit }, orderBookBuy: OrderbookItem): void {
+  orderBookBuyList(
+    { commit }: { commit: Commit },
+    orderBookBuy: { buyList: OrderbookItemList; maxAmount: number }
+  ): void {
     commit('setOrderBookBuy', orderBookBuy)
   },
 

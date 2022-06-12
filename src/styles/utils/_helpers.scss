@@ -145,8 +145,8 @@ $line-clamp-box: (
   text-align: start;
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.overflow-auto {
+  overflow: auto;
 }
 
 .flex-column {
@@ -155,6 +155,18 @@ $line-clamp-box: (
 }
 .slide-in-effect {
   animation: slide-in 1s ease 0s 1 normal forwards;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.border-collapse {
+  border-collapse: collapse;
 }
 
 .app-container {
