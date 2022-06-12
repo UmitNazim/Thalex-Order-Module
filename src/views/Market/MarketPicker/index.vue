@@ -1,7 +1,5 @@
 <template>
-  <organism-card hover class="market__picker">
-    <h3>Market Picker</h3>
-  </organism-card>
+  <organism-card hover class="market__picker"> </organism-card>
 </template>
 
 <script lang="ts">

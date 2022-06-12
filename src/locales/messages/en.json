@@ -4,6 +4,9 @@
   },
   "trade": {
     "buy": "Buy",
-    "sell": "Sell"
+    "sell": "Sell",
+    "price": "Price",
+    "total": "Total",
+    "amount": "Amount"
   }
 }

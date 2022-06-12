@@ -5,6 +5,7 @@
       v-model="value"
       :placeholder="placeholder"
       :type="type"
+      :readonly="readonly"
       class="molecule-input__field"
       @input="$emit('on-input')"
     />
@@ -28,6 +29,10 @@ export default defineComponent({
       default: null,
     },
     disabled: {
+      type: Boolean,
+      default: false,
+    },
+    readonly: {
       type: Boolean,
       default: false,
     },
